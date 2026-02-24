@@ -27,10 +27,10 @@ resource "azurerm_firewall_nat_rule_collection" "nat_rules" {
     content {
       name                  = rule.value.name
       source_addresses      = rule.value.source_addresses
-      destination_ports     = rule.value.destination_ports
       destination_addresses = [data.azurerm_public_ip.firewall_pip[each.key].ip_address]
-      translated_port       = rule.value.translated_port
+      destination_ports     = rule.value.destination_ports
       translated_address    = rule.value.translated_address
+      translated_port       = rule.value.translated_port
       protocols             = rule.value.protocols
     }
   }

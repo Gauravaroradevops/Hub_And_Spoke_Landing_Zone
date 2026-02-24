@@ -225,8 +225,8 @@ firewall = {
         name               = "dnat-http"
         source_addresses   = ["*"]
         destination_ports  = ["80"]
-        translated_port    = 80
         translated_address = "20.0.0.70"
+        translated_port    = 80
         protocols          = ["TCP"]
       }
     ]
