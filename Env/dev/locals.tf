@@ -2,6 +2,6 @@ locals {
   common_tags = {
     env = "dev"
     app = "todo"
-    owner = "Gaurav"
+    owner = "Gaurav-main"
   }
 }
